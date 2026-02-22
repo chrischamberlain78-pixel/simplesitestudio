@@ -49,13 +49,12 @@ body {
 
 .logo-panel img {
   width: 100%;
-  max-width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
 }
 
-/* ================= HERO ORANGE AREA ================= */
+/* ================= HERO ================= */
 
 .hero {
   background: linear-gradient(
@@ -67,23 +66,27 @@ body {
   padding: 26px 0 70px;
 }
 
-/* Tagline INSIDE orange */
 .tagline {
   font-family: 'Dancing Script', cursive;
   font-size: 2rem;
   font-weight: 700;
   color: #fff;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
   text-shadow: 0 3px 8px rgba(0,0,0,0.6);
   white-space: nowrap;
 }
 
-/* Hero text */
 .hero-text {
   color: #111;
   max-width: 620px;
-  margin: 0 auto 22px;
+  margin: 0 auto 8px;
   font-weight: 500;
+}
+
+.fast-turnaround {
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 22px;
 }
 
 .btn {
@@ -166,7 +169,7 @@ form {
   margin: 24px auto 0;
 }
 
-input, textarea {
+input, textarea, select {
   width: 100%;
   padding: 14px;
   margin-bottom: 14px;
@@ -174,6 +177,7 @@ input, textarea {
   border: 1px solid #333;
   color: #fff;
   border-radius: 8px;
+  font-family: inherit;
 }
 
 textarea {
@@ -224,7 +228,7 @@ footer {
   text-align: center;
 }
 
-/* ================= MOBILE SAFETY ================= */
+/* ================= MOBILE ================= */
 
 @media (max-width: 480px) {
   .tagline {
@@ -248,7 +252,11 @@ footer {
     <div class="tagline">Built Clean, Built to Work</div>
 
     <div class="hero-text">
-      This website is an example of the kind of site I build for clients.
+      This website is an example of the kind of work I offer.
+    </div>
+
+    <div class="fast-turnaround">
+      Quick turnaround · Up and running in as little as 24 hours
     </div>
 
     <a href="#contact" class="btn">Get a quote</a>
@@ -260,12 +268,14 @@ footer {
 <section>
   <div class="container">
     <p>
-      I design clean, mobile-friendly one-page websites for people who want to look
-      professional and be easy to contact — without agency prices or ongoing fees.
+      I create clean one-page websites and simple logo designs for small businesses
+      and trades who want to look professional without overcomplicating things.
     </p>
     <ul>
-      <li>One-page websites</li>
-      <li>Mobile-friendly design</li>
+      <li>One-page website design</li>
+      <li>Contact form setup</li>
+      <li>Simple logo design</li>
+      <li>Logo design as a standalone service</li>
       <li>Fast turnaround</li>
       <li>No ongoing design fees</li>
     </ul>
@@ -277,17 +287,25 @@ footer {
 <section>
   <div class="container">
     <div class="pricing">
+
       <div class="price-box">
-        <h3>Website</h3>
+        <h3>Website design + contact form</h3>
         <div class="price">£199</div>
-        <p>Clean one-page website</p>
+        <p>Clean one-page website with contact form</p>
       </div>
 
       <div class="price-box">
-        <h3>Website + Contact Form</h3>
+        <h3>Website design + contact form & logo design</h3>
         <div class="price">£249</div>
-        <p>Contact form, logo design & domain help</p>
+        <p>Website, contact form, simple logo design & domain help</p>
       </div>
+
+      <div class="price-box">
+        <h3>Logo design only</h3>
+        <div class="price">£60</div>
+        <p>Simple, clean logo design</p>
+      </div>
+
     </div>
   </div>
 </section>
@@ -296,11 +314,19 @@ footer {
 <div class="full-banner"><span>GET IN TOUCH</span></div>
 <section id="contact">
   <div class="container">
-    <p>If you want a straightforward website that works, send me a message.</p>
+    <p>If you want a straightforward website or logo, send me a message.</p>
 
     <form>
       <input type="text" placeholder="Your name" required>
       <input type="email" placeholder="Your email" required>
+
+      <select required>
+        <option value="">What are you looking for?</option>
+        <option>Web design with contact form</option>
+        <option>Web design with contact form + logo design</option>
+        <option>Logo design only</option>
+      </select>
+
       <textarea placeholder="Tell me about your business"></textarea>
       <button type="submit">Send message</button>
     </form>
