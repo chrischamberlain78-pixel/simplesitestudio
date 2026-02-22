@@ -1,198 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SimpleSiteStudio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SimpleSiteStudio</title>
 
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
 
-    body {
-      font-family: Arial, sans-serif;
-      background: #0f0f0f;
-      color: #ffffff;
-      text-align: center;
-    }
+body {
+  background: #0f0f0f;
+  color: #ffffff;
+  text-align: center;
+}
 
-    img {
-      max-width: 100%;
-      height: auto;
-    }
+/* HEADER */
+header {
+  background: #ffffff;
+  padding: 20px;
+}
 
-    /* HEADER */
-    header {
-      background: #ffffff;
-      padding: 20px;
-    }
+header img {
+  max-width: 260px;
+  height: auto;
+}
 
-    header img {
-      max-width: 320px;
-    }
+/* HERO */
+.hero {
+  background: linear-gradient(#e58b3c, #1a1a1a);
+  padding: 40px 20px;
+}
 
-    /* HERO */
-    .hero {
-      background: linear-gradient(to bottom, #e48c45, #0f0f0f);
-      padding: 50px 20px;
-    }
+.hero h1 {
+  font-family: "Brush Script MT", cursive;
+  font-size: 32px;
+  color: #ffffff;
+  white-space: nowrap;
+}
 
-    .hero h1 {
-      font-family: cursive;
-      font-size: clamp(1.6rem, 6vw, 2.2rem);
-      white-space: nowrap;
-      margin-bottom: 20px;
-    }
+.hero p {
+  margin: 20px auto;
+  max-width: 500px;
+  font-size: 18px;
+}
 
-    .hero p {
-      font-size: 1.1rem;
-      margin-bottom: 30px;
-    }
+.hero button {
+  background: #3b6fd8;
+  color: #ffffff;
+  border: none;
+  padding: 14px 28px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
 
-    .btn {
-      background: #3b6fd8;
-      color: #ffffff;
-      padding: 15px 30px;
-      border-radius: 10px;
-      text-decoration: none;
-      font-weight: bold;
-      display: inline-block;
-    }
+/* SECTION HEADERS */
+.section-header {
+  background: #e58b3c;
+  color: #000;
+  padding: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: 40px;
+}
 
-    /* SECTION HEADERS */
-    .section-title {
-      background: #e48c45;
-      color: #000000;
-      padding: 15px;
-      font-weight: bold;
-      letter-spacing: 1px;
-      margin-top: 50px;
-    }
+/* CONTENT */
+.section {
+  padding: 30px 20px;
+  max-width: 700px;
+  margin: auto;
+}
 
-    /* CONTENT */
-    .content {
-      padding: 40px 20px;
-    }
+.section ul {
+  list-style: none;
+  margin-top: 20px;
+}
 
-    .content p {
-      margin-bottom: 15px;
-      font-size: 1.05rem;
-    }
+.section ul li {
+  margin: 10px 0;
+}
 
-    /* CARDS */
-    .card {
-      background: #1b1b1b;
-      border-radius: 12px;
-      padding: 30px 20px;
-      margin: 20px auto;
-      max-width: 500px;
-    }
+/* PRICING */
+.price-card {
+  background: #1c1c1c;
+  padding: 30px 20px;
+  margin: 20px auto;
+  border-radius: 12px;
+  max-width: 500px;
+}
 
-    .price {
-      color: #e48c45;
-      font-size: 2rem;
-      margin: 15px 0;
-      font-weight: bold;
-    }
+.price {
+  color: #e58b3c;
+  font-size: 36px;
+  margin: 15px 0;
+}
 
-    /* CONTACT */
-    .contact-line {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      margin: 12px 0;
-      font-size: 1rem;
-    }
+/* CONTACT */
+.contact-card {
+  background: #1c1c1c;
+  padding: 30px 20px;
+  border-radius: 12px;
+  max-width: 500px;
+  margin: auto;
+}
 
-    .email-line a {
-      display: inline-block;
-      max-width: 100%;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      font-size: clamp(0.75rem, 3.2vw, 0.9rem);
-      color: #ffffff;
-      text-decoration: none;
-    }
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: none;
+}
 
-    footer {
-      padding: 30px 10px;
-      font-size: 0.9rem;
-      color: #aaaaaa;
-    }
-  </style>
+.contact-form button {
+  background: #e58b3c;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact-details {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* LINE CONTROL */
+.contact-line {
+  margin-top: 14px;
+  white-space: nowrap;
+}
+
+/* EMAIL FIX */
+.email {
+  display: block;
+  margin-top: 6px;
+  font-size: 13px;
+  max-width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  margin: 30px 0;
+  font-size: 14px;
+  color: #aaa;
+}
+</style>
 </head>
 
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <img src="header-logo.png" alt="SimpleSiteStudio Logo">
-  </header>
+<header>
+  <img src="header-logo.png" alt="SimpleSiteStudio Logo">
+</header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <h1>Built Clean, Built to Work</h1>
-    <p>This website is an example of the kind of site I build for clients.</p>
-    <a href="#contact" class="btn">Get a quote</a>
-  </section>
+<section class="hero">
+  <h1>Built Clean • Built to Work</h1>
+  <p>This website is an example of the kind of site I build for clients.</p>
+  <button>Get a quote</button>
+</section>
 
-  <!-- WHAT I DO -->
-  <div class="section-title">WHAT I DO</div>
-  <section class="content">
-    <p>I design clean, mobile-friendly one-page websites and logos for small businesses that need to look professional and be easy to contact.</p>
-    <p>One-page websites</p>
-    <p>Logo design</p>
-    <p>Mobile-friendly design</p>
-    <p>Quick turnaround (as little as 24hrs)</p>
-    <p>No ongoing design fees</p>
-  </section>
+<div class="section-header">WHAT I DO</div>
+<section class="section">
+  <p>
+    I design clean, mobile-friendly one-page websites and logos for small
+    businesses that need to look professional and be easy to contact.
+  </p>
 
-  <!-- PRICING -->
-  <div class="section-title">PRICING</div>
+  <ul>
+    <li>One-page websites</li>
+    <li>Logo design</li>
+    <li>Mobile-friendly design</li>
+    <li>Quick turnaround (as little as 24hrs)</li>
+    <li>No ongoing design fees</li>
+  </ul>
+</section>
 
-  <section class="content">
-    <div class="card">
-      <h3>Website design + contact details</h3>
-      <div class="price">£169</div>
-      <p>Clean one-page website with your contact info clearly displayed.</p>
-    </div>
+<div class="section-header">PRICING</div>
 
-    <div class="card">
-      <h3>Website + contact details & logo design</h3>
-      <div class="price">£199</div>
-      <p>Website, logo design, and help getting your domain set up.</p>
-    </div>
+<div class="price-card">
+  <h3>Website design + contact details</h3>
+  <div class="price">£169</div>
+  <p>Clean one-page website with your contact info clearly displayed.</p>
+</div>
 
-    <div class="card">
-      <h3>Logo design only</h3>
-      <div class="price">£50</div>
-      <p>Simple, professional logo for your business.</p>
-    </div>
-  </section>
+<div class="price-card">
+  <h3>Website + contact details & logo design</h3>
+  <div class="price">£229</div>
+  <p>Website, logo design, and help getting your domain live.</p>
+</div>
 
-  <!-- CONTACT -->
-  <div class="section-title" id="contact">CONTACT US</div>
-  <section class="content">
-    <div class="card">
-      <div class="contact-line">📱 WhatsApp: 07732813072</div>
-      <div class="contact-line email-line">
-        📧 <a href="mailto:simplesitestudioinfo@gmail.com">
-          simplesitestudioinfo@gmail.com
-        </a>
+<div class="price-card">
+  <h3>Logo design only</h3>
+  <div class="price">£50</div>
+  <p>Simple, professional logo for your business.</p>
+</div>
+
+<div class="section-header">CONTACT US</div>
+
+<section class="section">
+  <div class="contact-card">
+    <form class="contact-form">
+      <input type="text" placeholder="Your name" required>
+      <input type="email" placeholder="Your email" required>
+      <textarea rows="4" placeholder="Tell me about your project" required></textarea>
+      <button type="submit">Send message</button>
+    </form>
+
+    <div class="contact-details">
+      <div class="contact-line">
+        📱 WhatsApp: 07732813072
       </div>
-    </div>
-  </section>
 
-  <!-- FOOTER -->
-  <footer>
-    © 2026 SimpleSiteStudio · Built Clean. Built to Work.
-  </footer>
+      <span class="email">
+        ✉️ simplesitestudioinfo@gmail.com
+      </span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 SimpleSiteStudio • Built Clean. Built to Work.
+</footer>
 
 </body>
 </html>
-
