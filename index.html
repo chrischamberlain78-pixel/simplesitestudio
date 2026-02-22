@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SimpleSiteStudio – Built Clean. Built to Work.</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --orange: #f47c20;
+      --blue: #1f6fd6;
+      --black: #0e0e0e;
+      --grey: #cfcfcf;
+      --panel: #161616;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: var(--black);
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    /* ================= HEADER ================= */
+    .logo-panel {
+      background: #fff;
+      padding: 26px 16px;
+      text-align: center;
+    }
+
+    .logo-panel img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: auto;
+    }
+
+    /* TAGLINE STRIP */
+    .tagline-strip {
+      background: var(--orange);
+      padding: 14px 12px;
+      text-align: center;
+    }
+
+    .tagline {
+      font-family: 'Dancing Script', cursive;
+      font-size: clamp(1.6rem, 4.5vw, 2.1rem);
+      font-weight: 700;
+      color: #ffffff;
+      white-space: nowrap;
+      text-shadow:
+        0 2px 4px rgba(0,0,0,0.45),
+        0 4px 10px rgba(0,0,0,0.35);
+    }
+
+    /* ================= HERO ================= */
+    .hero {
+      background: linear-gradient(
+        to bottom,
+        var(--orange) 0%,
+        var(--black) 85%
+      );
+      padding: 26px 20px 80px;
+      text-align: center;
+    }
+
+    .hero-text {
+      color: #111;
+      max-width: 640px;
+      margin: 0 auto 28px;
+      font-weight: 500;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--blue);
+      color: #fff;
+      padding: 16px 38px;
+      border-radius: 8px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    /* ============ SECTION BANNERS ============ */
+    .section-banner {
+      background: var(--orange);
+      color: #000;
+      padding: 14px 0;
+      margin-top: 80px;
+    }
+
+    .section-banner h2 {
+      font-size: 1rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    section {
+      padding-top: 40px;
+    }
+
+    section p {
+      color: var(--grey);
+      max-width: 720px;
+      margin: auto;
+    }
+
+    ul {
+      list-style: none;
+      margin: 26px auto 0;
+      max-width: 420px;
+      text-align: left;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+      padding-left: 18px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: var(--orange);
+    }
+
+    /* =============== PRICING =============== */
+    .pricing {
+      display: grid;
+      gap: 22px;
+      max-width: 360px;
+      margin: 32px auto 0;
+    }
+
+    .price-box {
+      background: var(--panel);
+      padding: 26px;
+      border-radius: 10px;
+    }
+
+    .price {
+      font-size: 2rem;
+      font-weight: 800;
+      margin: 10px 0;
+    }
+
+    /* ================ FORM ================= */
+    form {
+      max-width: 420px;
+      margin: 30px auto 0;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 14px;
+      background: #111;
+      border: 1px solid #333;
+      color: #fff;
+      border-radius: 8px;
+      font-size: 0.95rem;
+    }
+
+    textarea {
+      min-height: 120px;
+    }
+
+    button {
+      background: var(--orange);
+      border: none;
+      padding: 15px;
+      width: 100%;
+      font-weight: 800;
+      color: #000;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    /* =============== FOOTER =============== */
+    footer {
+      border-top: 1px solid #222;
+      padding: 26px 0;
+      color: #aaa;
+      font-size: 0.85rem;
+      margin-top: 80px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- LOGO -->
+  <div class="logo-panel">
+    <img src="header-logo.png" alt="SimpleSiteStudio">
+  </div>
+
+  <!-- TAGLINE -->
+  <div class="tagline-strip">
+    <div class="tagline">Built Clean, Built to Work</div>
+  </div>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-text">
+      This website is an example of the kind of site I build for clients.
+    </div>
+    <a href="#contact" class="btn">Get a quote</a>
+  </div>
+
+  <!-- NO MONTHLY FEES -->
+  <div class="section-banner">
+    <div class="container">
+      <h2>No monthly fees</h2>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <p>
+        Many website companies charge a monthly fee forever. I don’t.
+      </p>
+      <p style="margin-top:14px;">
+        You pay once for your website. It’s yours to keep, use, and host wherever you want.
+        No subscriptions. No contracts. No nonsense.
+      </p>
+    </div>
+  </section>
+
+  <!-- WHAT I DO -->
+  <div class="section-banner">
+    <div class="container">
+      <h2>What I do</h2>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <p>
+        I design clean, mobile-friendly one-page websites for people who need to look professional and be easy to contact.
+      </p>
+      <ul>
+        <li>One-page website</li>
+        <li>Mobile-friendly design</li>
+        <li>Fast turnaround</li>
+        <li>No ongoing design fees</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SET UP -->
+  <div class="section-banner">
+    <div class="container">
+      <h2>Set up, handled</h2>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <p>
+        I’ll help with names, domains, hosting and getting everything live.
+      </p>
+      <ul>
+        <li>Business name ideas</li>
+        <li>Domain advice & setup</li>
+        <li>Hosting configured for you</li>
+        <li>Email setup available</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <div class="section-banner">
+    <div class="container">
+      <h2>Pricing</h2>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="pricing">
+        <div class="price-box">
+          <h3>Website</h3>
+          <div class="price">£199</div>
+          <p>Clean one-page website</p>
+        </div>
+
+        <div class="price-box">
+          <h3>Website + Form</h3>
+          <div class="price">£249</div>
+          <p>Website with contact form</p>
+        </div>
+
+        <div class="price-box">
+          <h3>Done For You</h3>
+          <div class="price">£349</div>
+          <p>Website, domain help & hosting setup</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <div class="section-banner">
+    <div class="container">
+      <h2>Get in touch</h2>
+    </div>
+  </div>
+
+  <section id="contact">
+    <div class="container">
+      <p>
+        If you want a straightforward website that works, send me a message.
+      </p>
+      <form>
+        <input type="text" placeholder="Your name" required>
+        <input type="email" placeholder="Your email" required>
+        <textarea placeholder="Tell me about your business"></textarea>
+        <button type="submit">Send message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © <span id="year"></span> SimpleSiteStudio · Built Clean. Built to Work.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
