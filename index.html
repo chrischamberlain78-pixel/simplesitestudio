@@ -1,353 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SimpleSiteStudio – Built Clean. Built to Work.</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SimpleSiteStudio</title>
 
-<!-- Google Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-<style>
-:root {
-  --orange: #f47c20;
-  --blue: #1f6fd6;
-  --black: #0e0e0e;
-  --panel: #161616;
-  --grey: #cfcfcf;
-}
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+      text-align: center;
+    }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+    img {
+      max-width: 100%;
+      height: auto;
+    }
 
-body {
-  font-family: 'Inter', sans-serif;
-  background: var(--black);
-  color: #fff;
-  line-height: 1.6;
-}
+    /* HEADER */
+    header {
+      background: #ffffff;
+      padding: 20px;
+    }
 
-.container {
-  max-width: 900px;
-  margin: auto;
-  padding: 0 20px;
-  text-align: center;
-}
+    header img {
+      max-width: 320px;
+    }
 
-/* ================= HEADER ================= */
+    /* HERO */
+    .hero {
+      background: linear-gradient(to bottom, #e48c45, #0f0f0f);
+      padding: 50px 20px;
+    }
 
-.logo-panel {
-  background: #fff;
-  padding: 26px 16px;
-  text-align: center;
-}
+    .hero h1 {
+      font-family: cursive;
+      font-size: clamp(1.6rem, 6vw, 2.2rem);
+      white-space: nowrap;
+      margin-bottom: 20px;
+    }
 
-.logo-panel img {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
+    .hero p {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+    }
 
-/* ================= HERO ================= */
+    .btn {
+      background: #3b6fd8;
+      color: #ffffff;
+      padding: 15px 30px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+    }
 
-.hero {
-  background: linear-gradient(
-    to bottom,
-    var(--orange) 0%,
-    var(--orange) 55%,
-    var(--black) 100%
-  );
-  padding: 26px 0 70px;
-}
+    /* SECTION HEADERS */
+    .section-title {
+      background: #e48c45;
+      color: #000000;
+      padding: 15px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin-top: 50px;
+    }
 
-.tagline {
-  font-family: 'Dancing Script', cursive;
-  font-size: 2rem;
-  font-weight: 700;
-  color: #fff;
-  margin-bottom: 10px;
-  text-shadow: 0 3px 8px rgba(0,0,0,0.6);
-  white-space: nowrap;
-}
+    /* CONTENT */
+    .content {
+      padding: 40px 20px;
+    }
 
-.hero-text {
-  color: #111;
-  max-width: 620px;
-  margin: 0 auto 8px;
-  font-weight: 500;
-}
+    .content p {
+      margin-bottom: 15px;
+      font-size: 1.05rem;
+    }
 
-.fast-turnaround {
-  font-weight: 700;
-  color: #111;
-  margin-bottom: 22px;
-}
+    /* CARDS */
+    .card {
+      background: #1b1b1b;
+      border-radius: 12px;
+      padding: 30px 20px;
+      margin: 20px auto;
+      max-width: 500px;
+    }
 
-.btn {
-  display: inline-block;
-  background: var(--blue);
-  color: #fff;
-  padding: 16px 36px;
-  border-radius: 8px;
-  font-weight: 700;
-  text-decoration: none;
-}
+    .price {
+      color: #e48c45;
+      font-size: 2rem;
+      margin: 15px 0;
+      font-weight: bold;
+    }
 
-/* ================= FULL-WIDTH ORANGE BANNERS ================= */
+    /* CONTACT */
+    .contact-line {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin: 12px 0;
+      font-size: 1rem;
+    }
 
-.full-banner {
-  background: var(--orange);
-  width: 100%;
-  padding: 14px 0;
-  text-align: center;
-}
+    .email-line a {
+      display: inline-block;
+      max-width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-size: clamp(0.75rem, 3.2vw, 0.9rem);
+      color: #ffffff;
+      text-decoration: none;
+    }
 
-.full-banner span {
-  font-weight: 800;
-  color: #000;
-  letter-spacing: 0.08em;
-  font-size: 0.85rem;
-}
-
-/* ================= SECTIONS ================= */
-
-section {
-  padding: 48px 0 64px;
-}
-
-section p {
-  color: var(--grey);
-  max-width: 650px;
-  margin: 0 auto 20px;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-ul li {
-  margin-bottom: 8px;
-}
-
-/* ================= PRICING ================= */
-
-.pricing {
-  display: grid;
-  gap: 20px;
-  justify-items: center;
-}
-
-.price-box {
-  background: var(--panel);
-  padding: 26px;
-  border-radius: 12px;
-  max-width: 340px;
-  width: 100%;
-}
-
-.price-box h3 {
-  margin-bottom: 6px;
-}
-
-.price {
-  font-size: 2rem;
-  font-weight: 800;
-  margin: 10px 0;
-}
-
-/* ================= FORM ================= */
-
-form {
-  max-width: 480px;
-  margin: 24px auto 0;
-}
-
-input, textarea, select {
-  width: 100%;
-  padding: 14px;
-  margin-bottom: 14px;
-  background: #111;
-  border: 1px solid #333;
-  color: #fff;
-  border-radius: 8px;
-  font-family: inherit;
-}
-
-textarea {
-  min-height: 120px;
-}
-
-button {
-  background: var(--orange);
-  border: none;
-  padding: 15px;
-  width: 100%;
-  font-weight: 800;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-/* ================= POLICY ================= */
-
-.policy-box {
-  max-width: 720px;
-  margin: 80px auto 0;
-  background: var(--panel);
-  border-radius: 12px;
-  padding: 30px 26px;
-  text-align: center;
-}
-
-.policy-box h3 {
-  color: var(--orange);
-  margin-bottom: 14px;
-}
-
-.policy-box p {
-  max-width: 600px;
-  margin: auto;
-  color: var(--grey);
-  font-size: 0.95rem;
-}
-
-/* ================= FOOTER ================= */
-
-footer {
-  margin-top: 60px;
-  padding: 26px 0;
-  border-top: 1px solid #222;
-  font-size: 0.85rem;
-  color: #aaa;
-  text-align: center;
-}
-
-/* ================= MOBILE ================= */
-
-@media (max-width: 480px) {
-  .tagline {
-    font-size: 1.5rem;
-    white-space: normal;
-  }
-}
-</style>
+    footer {
+      padding: 30px 10px;
+      font-size: 0.9rem;
+      color: #aaaaaa;
+    }
+  </style>
 </head>
 
 <body>
 
-<!-- LOGO -->
-<div class="logo-panel">
-  <img src="header-logo.png" alt="SimpleSiteStudio">
-</div>
+  <!-- HEADER -->
+  <header>
+    <img src="header-logo.png" alt="SimpleSiteStudio Logo">
+  </header>
 
-<!-- HERO -->
-<div class="hero">
-  <div class="container">
-    <div class="tagline">Built Clean, Built to Work</div>
-
-    <div class="hero-text">
-      This website is an example of the kind of work I offer.
-    </div>
-
-    <div class="fast-turnaround">
-      Quick turnaround · Up and running in as little as 24 hours
-    </div>
-
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Built Clean, Built to Work</h1>
+    <p>This website is an example of the kind of site I build for clients.</p>
     <a href="#contact" class="btn">Get a quote</a>
-  </div>
-</div>
+  </section>
 
-<!-- WHAT I DO -->
-<div class="full-banner"><span>WHAT I DO</span></div>
-<section>
-  <div class="container">
-    <p>
-      I create clean one-page websites and simple logo designs for small businesses
-      and trades who want to look professional without overcomplicating things.
-    </p>
-    <ul>
-      <li>One-page website design</li>
-      <li>Contact form setup</li>
-      <li>Simple logo design</li>
-      <li>Logo design as a standalone service</li>
-      <li>Fast turnaround</li>
-      <li>No ongoing design fees</li>
-    </ul>
-  </div>
-</section>
+  <!-- WHAT I DO -->
+  <div class="section-title">WHAT I DO</div>
+  <section class="content">
+    <p>I design clean, mobile-friendly one-page websites and logos for small businesses that need to look professional and be easy to contact.</p>
+    <p>One-page websites</p>
+    <p>Logo design</p>
+    <p>Mobile-friendly design</p>
+    <p>Quick turnaround (as little as 24hrs)</p>
+    <p>No ongoing design fees</p>
+  </section>
 
-<!-- PRICING -->
-<div class="full-banner"><span>PRICING</span></div>
-<section>
-  <div class="container">
-    <div class="pricing">
+  <!-- PRICING -->
+  <div class="section-title">PRICING</div>
 
-      <div class="price-box">
-        <h3>Website design + contact form</h3>
-        <div class="price">£199</div>
-        <p>Clean one-page website with contact form</p>
-      </div>
-
-      <div class="price-box">
-        <h3>Website design + contact form & logo design</h3>
-        <div class="price">£249</div>
-        <p>Website, contact form, simple logo design & domain help</p>
-      </div>
-
-      <div class="price-box">
-        <h3>Logo design only</h3>
-        <div class="price">£60</div>
-        <p>Simple, clean logo design</p>
-      </div>
-
+  <section class="content">
+    <div class="card">
+      <h3>Website design + contact details</h3>
+      <div class="price">£199</div>
+      <p>Clean one-page website with your contact info clearly displayed.</p>
     </div>
-  </div>
-</section>
 
-<!-- CONTACT -->
-<div class="full-banner"><span>GET IN TOUCH</span></div>
-<section id="contact">
-  <div class="container">
-    <p>If you want a straightforward website or logo, send me a message.</p>
+    <div class="card">
+      <h3>Website + contact details & logo design</h3>
+      <div class="price">£249</div>
+      <p>Website, logo design, and help getting your domain set up.</p>
+    </div>
 
-    <form>
-      <input type="text" placeholder="Your name" required>
-      <input type="email" placeholder="Your email" required>
+    <div class="card">
+      <h3>Logo design only</h3>
+      <div class="price">£60</div>
+      <p>Simple, professional logo for your business.</p>
+    </div>
+  </section>
 
-      <select required>
-        <option value="">What are you looking for?</option>
-        <option>Web design with contact form</option>
-        <option>Web design with contact form + logo design</option>
-        <option>Logo design only</option>
-      </select>
+  <!-- CONTACT -->
+  <div class="section-title" id="contact">CONTACT US</div>
+  <section class="content">
+    <div class="card">
+      <div class="contact-line">📱 WhatsApp: 07732813072</div>
+      <div class="contact-line email-line">
+        📧 <a href="mailto:simplesitestudioinfo@gmail.com">
+          simplesitestudioinfo@gmail.com
+        </a>
+      </div>
+    </div>
+  </section>
 
-      <textarea placeholder="Tell me about your business"></textarea>
-      <button type="submit">Send message</button>
-    </form>
-  </div>
-</section>
-
-<!-- POLICY -->
-<div class="policy-box">
-  <h3>Domain & Hosting Policy</h3>
-  <p>
-    I can help you choose and set up a domain and get your website live, but domains and hosting
-    are owned and paid for by you. Domain registrations are billed yearly and are usually inexpensive
-    (typically £10–£15 per year). Email services are billed separately. Website design is a one-off cost
-    with no ongoing fees.
-  </p>
-</div>
-
-<!-- FOOTER -->
-<footer>
-  © SimpleSiteStudio · Built Clean. Built to Work.
-</footer>
+  <!-- FOOTER -->
+  <footer>
+    © 2026 SimpleSiteStudio · Built Clean. Built to Work.
+  </footer>
 
 </body>
 </html>
