@@ -246,10 +246,18 @@ footer {
 <div class="section-header" id="contact">CONTACT US</div>
 
 <div class="contact-card">
-  <form class="contact-form">
-    <input type="text" placeholder="Your name" required>
-    <input type="email" placeholder="Your email" required>
-    <textarea rows="4" placeholder="Tell us about your project" required></textarea>
+  <form 
+    class="contact-form"
+    action="https://formspree.io/f/xgolpkww"
+    method="POST"
+  >
+    <input type="text" name="name" placeholder="Your name" required>
+    <input type="email" name="email" placeholder="Your email" required>
+    <textarea name="message" rows="4" placeholder="Tell us about your project" required></textarea>
+
+    <!-- Spam protection -->
+    <input type="text" name="_gotcha" style="display:none">
+
     <button type="submit">Send message</button>
   </form>
 
