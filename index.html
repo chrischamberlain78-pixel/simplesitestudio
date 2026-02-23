@@ -21,110 +21,89 @@ body {
 
 /* HEADER */
 header {
-  background: #ffffff;
-  padding: 20px;
-  position: relative;
+  background: #0f0f0f;
+  padding: 10px 10px 2px;
 }
 
 header img {
-  max-width: 260px;
+  width: 100%;
+  max-width: 900px;
   height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
-/* FADING SEPARATOR */
-header::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -14px;
-  width: 100%;
-  height: 28px;
-  background: linear-gradient(
-    to bottom,
-    rgba(0,0,0,0) 0%,
-    rgba(0,0,0,0.7) 50%,
-    rgba(0,0,0,0) 100%
+.header-divider {
+  height: 4px;
+  background: radial-gradient(
+    ellipse at center,
+    #000 0%,
+    #000 40%,
+    transparent 70%
   );
-  pointer-events: none;
 }
 
 /* HERO */
 .hero {
-  background: linear-gradient(#e58b3c, #1a1a1a);
-  padding: 40px 20px;
+  background: linear-gradient(#000000, #2a2a2a);
+  padding: 22px 16px 30px;
+  margin-top: -14px;
 }
 
-.hero h1 {
-  font-family: "Brush Script MT", cursive;
-  font-size: 26px;
-  color: #ffffff;
-}
-
-.hero p {
-  margin: 18px auto;
-  max-width: 520px;
-  font-size: 17px;
-}
-
-/* STRONG 3D BLUE BUTTON */
-.btn-blue {
-  background: linear-gradient(to bottom, #6a95ff 0%, #2f5fd0 100%);
-  color: #ffffff;
+.hero button {
+  margin-top: 8px;
+  background: linear-gradient(#5b86e5, #3b6fd8);
+  color: #fff;
   border: none;
-  padding: 14px 30px;
+  padding: 14px 32px;
   font-size: 18px;
-  font-weight: bold;
   border-radius: 10px;
   cursor: pointer;
-
   box-shadow:
     inset 0 2px 0 rgba(255,255,255,0.25),
-    inset 0 -3px 0 rgba(0,0,0,0.35),
-    0 8px 0 #1f3f8f,
-    0 14px 26px rgba(0,0,0,0.5);
-
-  transition: all 0.15s ease;
+    0 6px 0 #2a57b8,
+    0 10px 18px rgba(0,0,0,0.4);
 }
 
-.btn-blue:hover {
-  filter: brightness(1.08);
-}
-
-.btn-blue:active {
-  transform: translateY(5px);
+.hero button:active {
+  transform: translateY(4px);
   box-shadow:
-    inset 0 1px 0 rgba(255,255,255,0.2),
-    inset 0 -2px 0 rgba(0,0,0,0.4),
-    0 3px 0 #1f3f8f,
-    0 6px 12px rgba(0,0,0,0.45);
+    inset 0 2px 0 rgba(255,255,255,0.2),
+    0 2px 0 #2a57b8,
+    0 6px 12px rgba(0,0,0,0.4);
 }
 
 /* SECTION HEADERS */
 .section-header {
   background: #e58b3c;
   color: #000;
-  padding: 12px 26px;
+  padding: 18px;
   font-weight: bold;
   letter-spacing: 1px;
-  margin: 42px auto 0;
-  display: inline-block;
-  border-radius: 999px;
+  margin-top: 22px;
+  width: 90%;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 12px;
+  border: 2px solid #ffffff; /* WHITE BORDER */
 }
 
-/* INFO BOX */
+/* WHAT WE DO BOX */
 .info-box {
-  background: #e58b3c;
-  color: #000;
-  border: 3px solid #c8742f;
+  background: #000;
+  color: #e58b3c;
+  padding: 22px;
   border-radius: 16px;
-  padding: 22px 18px;
-  max-width: 650px;
-  margin: 24px auto;
+  border: 2px solid #ffffff; /* WHITE BORDER */
+  max-width: 720px;
+  margin: 16px auto 24px;
   font-size: 15px;
 }
 
 .info-box p {
   margin-bottom: 14px;
+  line-height: 1.6;
 }
 
 .info-box ul {
@@ -132,68 +111,80 @@ header::after {
 }
 
 .info-box li {
-  margin: 8px 0;
-  font-weight: bold;
+  margin: 6px 0;
 }
 
 /* PRICING */
 .price-card {
   background: #1c1c1c;
-  padding: 30px 20px;
-  margin: 20px auto;
-  border-radius: 12px;
-  max-width: 500px;
+  padding: 22px 18px;
+  margin: 16px auto;
+  border-radius: 14px;
+  max-width: 520px;
 }
 
 .price-card h3 {
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .price {
   color: #e58b3c;
-  font-size: 36px;
-  margin: 15px 0;
+  font-size: 34px;
+  margin: 12px 0;
 }
 
 /* CONTACT */
 .contact-card {
   background: #1c1c1c;
-  padding: 30px 20px;
-  border-radius: 12px;
-  max-width: 500px;
-  margin: auto;
+  padding: 22px 18px;
+  border-radius: 14px;
+  max-width: 520px;
+  margin: 18px auto;
 }
 
 .contact-form input,
 .contact-form textarea {
   width: 100%;
   padding: 12px;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   border-radius: 6px;
   border: none;
 }
 
 .contact-form button {
+  background: linear-gradient(#5b86e5, #3b6fd8);
+  color: #fff;
+  border: none;
+  padding: 14px;
   width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow:
+    inset 0 2px 0 rgba(255,255,255,0.25),
+    0 6px 0 #2a57b8,
+    0 10px 18px rgba(0,0,0,0.4);
 }
 
 .contact-details {
-  margin-top: 24px;
+  margin-top: 18px;
   font-size: 15px;
 }
 
 .contact-details div {
-  margin-top: 12px;
+  margin-top: 10px;
 }
 
 .email {
-  font-size: 13px;
+  font-size: 14px;
   word-break: break-all;
+  text-align: center;
 }
 
 /* FOOTER */
 footer {
-  margin: 30px 0;
+  margin: 20px 0;
   font-size: 14px;
   color: #aaa;
 }
@@ -203,14 +194,12 @@ footer {
 <body>
 
 <header>
-  <img src="header-logo.png" alt="SimpleSiteStudio Logo">
+  <img src="header-image.png" alt="SimpleSiteStudio Logo">
 </header>
+<div class="header-divider"></div>
 
 <section class="hero">
-  <h1>Built Clean • Built to Work</h1>
-  <p>This website is an example of the kind of site we build for clients.</p>
-  <button class="btn-blue"
-    onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+  <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
     Contact us
   </button>
 </section>
@@ -219,63 +208,56 @@ footer {
 
 <div class="info-box">
   <p>
-    We design clean, mobile-friendly one-page websites and logos for small
-    businesses that need to look professional and be easy to contact.
+    We design clean, mobile-friendly one-page websites for small businesses that
+    want a professional online presence without unnecessary complexity.
+  </p>
+
+  <p>
+    We use modern, AI-assisted development tools alongside hands-on design and
+    decision-making. This allows us to work efficiently, reduce build time, and
+    keep costs sensible — without cutting corners.
   </p>
 
   <ul>
-    <li>One-page websites</li>
+    <li>One-page website design</li>
+    <li>Built-in contact form</li>
     <li>Logo design</li>
-    <li>Mobile-friendly design</li>
+    <li>Business & company name ideas</li>
+    <li>Mobile-friendly layouts</li>
     <li>Quick turnaround</li>
     <li>No ongoing design fees</li>
-    <li>Code-only builds available</li>
   </ul>
 </div>
 
 <div class="section-header">PRICING</div>
 
 <div class="price-card">
-  <h3>Website design + contact details</h3>
+  <h3>Website design + contact form</h3>
   <div class="price">£169</div>
-  <p>Clean one-page website with your contact info clearly displayed.</p>
+  <p>Fully designed one-page website supplied with a built-in contact form.</p>
 </div>
 
 <div class="price-card">
-  <h3>Website + contact details & logo design</h3>
+  <h3>Website + contact form & logo design</h3>
   <div class="price">£229</div>
-  <p>Website, logo design, and help getting your domain live.</p>
-</div>
-
-<div class="price-card">
-  <h3>Code-only build</h3>
-  <div class="price">£60</div>
-  <p>Clean, ready-to-use HTML/CSS code supplied.</p>
-</div>
-
-<div class="price-card">
-  <h3>Logo design only</h3>
-  <div class="price">£50</div>
-  <p>Simple, professional logo for your business.</p>
+  <p>Complete one-page website plus a professionally designed logo.</p>
 </div>
 
 <div class="section-header" id="contact">CONTACT US</div>
 
-<section>
-  <div class="contact-card">
-    <form class="contact-form">
-      <input type="text" placeholder="Your name" required>
-      <input type="email" placeholder="Your email" required>
-      <textarea rows="4" placeholder="Tell us about your project" required></textarea>
-      <button type="submit" class="btn-blue">Send message</button>
-    </form>
+<div class="contact-card">
+  <form class="contact-form">
+    <input type="text" placeholder="Your name" required>
+    <input type="email" placeholder="Your email" required>
+    <textarea rows="4" placeholder="Tell us about your project" required></textarea>
+    <button type="submit">Send message</button>
+  </form>
 
-    <div class="contact-details">
-      <div>📱 WhatsApp: 07732813072</div>
-      <div>✉️ <span class="email">simplesitestudioinfo@gmail.com</span></div>
-    </div>
+  <div class="contact-details">
+    <div>📱 WhatsApp: 07732813072</div>
+    <div class="email">✉️ simplesitestudioinfo@gmail.com</div>
   </div>
-</section>
+</div>
 
 <footer>
   © 2026 SimpleSiteStudio • Built Clean. Built to Work.
