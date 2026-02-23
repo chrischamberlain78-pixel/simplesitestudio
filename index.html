@@ -22,91 +22,126 @@ body {
 /* HEADER */
 header {
   background: #ffffff;
-  padding: 20px;
+  padding: 18px;
 }
 
 header img {
-  max-width: 260px;
+  max-width: 240px;
+  width: 100%;
   height: auto;
 }
 
 /* HERO */
 .hero {
   background: linear-gradient(#e58b3c, #1a1a1a);
-  padding: 40px 20px;
+  padding: 36px 16px;
 }
 
 .hero h1 {
   font-family: "Brush Script MT", cursive;
-  font-size: 32px;
-  color: #ffffff;
-  white-space: nowrap;
+  font-size: 26px;
+  margin-bottom: 14px;
 }
 
 .hero p {
-  margin: 20px auto;
-  max-width: 500px;
-  font-size: 18px;
+  font-size: 16px;
+  max-width: 480px;
+  margin: 0 auto 18px;
 }
 
-.hero button {
+.hero a {
+  display: inline-block;
   background: #3b6fd8;
-  color: #ffffff;
-  border: none;
-  padding: 14px 28px;
-  font-size: 18px;
+  color: #fff;
+  padding: 12px 26px;
   border-radius: 8px;
-  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
 }
 
 /* SECTION HEADERS */
 .section-header {
   background: #e58b3c;
   color: #000;
-  padding: 14px;
+  padding: 12px;
   font-weight: bold;
   letter-spacing: 1px;
-  margin-top: 40px;
+  margin-top: 36px;
 }
 
-/* CONTENT */
-.section {
-  padding: 30px 20px;
-  max-width: 700px;
-  margin: auto;
+/* WHAT I DO BOX */
+.what-box {
+  background: #e58b3c;
+  color: #000;
+  border: 3px solid #c96f27;
+  border-radius: 14px;
+  padding: 16px;
+  max-width: 600px;
+  margin: 20px auto;
 }
 
-.section ul {
+.what-box p {
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+.what-box ul {
   list-style: none;
-  margin-top: 20px;
 }
 
-.section ul li {
-  margin: 10px 0;
+.what-box li {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 6px 0;
+}
+
+/* WHY IT WORKS */
+.why-card {
+  background: #1c1c1c;
+  border-radius: 14px;
+  padding: 26px 20px;
+  max-width: 650px;
+  margin: 20px auto;
+}
+
+.why-card h3 {
+  color: #e58b3c;
+  margin-bottom: 12px;
+}
+
+.why-card p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #dddddd;
 }
 
 /* PRICING */
 .price-card {
   background: #1c1c1c;
-  padding: 30px 20px;
+  padding: 26px 18px;
   margin: 20px auto;
   border-radius: 12px;
   max-width: 500px;
 }
 
+.price-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
 .price {
   color: #e58b3c;
-  font-size: 36px;
-  margin: 15px 0;
+  font-size: 32px;
+  margin-bottom: 10px;
 }
 
 /* CONTACT */
 .contact-card {
   background: #1c1c1c;
-  padding: 30px 20px;
+  padding: 26px 18px;
   border-radius: 12px;
   max-width: 500px;
-  margin: auto;
+  margin: 20px auto;
 }
 
 .contact-form input,
@@ -129,25 +164,17 @@ header img {
 }
 
 .contact-details {
-  margin-top: 20px;
-  text-align: center;
+  margin-top: 18px;
+  font-size: 15px;
 }
 
-/* LINE CONTROL */
-.contact-line {
-  margin-top: 14px;
-  white-space: nowrap;
+.contact-details div {
+  margin-top: 10px;
 }
 
-/* EMAIL FIX */
 .email {
-  display: block;
-  margin-top: 6px;
   font-size: 13px;
-  max-width: 100%;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  text-align: center;
+  word-break: break-word;
 }
 
 /* FOOTER */
@@ -168,24 +195,42 @@ footer {
 <section class="hero">
   <h1>Built Clean • Built to Work</h1>
   <p>This website is an example of the kind of site I build for clients.</p>
-  <button>Get a quote</button>
+  <a href="#contact">Contact us</a>
 </section>
 
 <div class="section-header">WHAT I DO</div>
-<section class="section">
+
+<div class="what-box">
   <p>
     I design clean, mobile-friendly one-page websites and logos for small
     businesses that need to look professional and be easy to contact.
   </p>
-
   <ul>
     <li>One-page websites</li>
     <li>Logo design</li>
     <li>Mobile-friendly design</li>
-    <li>Quick turnaround (as little as 24hrs)</li>
+    <li>Quick turnaround</li>
     <li>No ongoing design fees</li>
+    <li>Code-only builds available</li>
   </ul>
-</section>
+</div>
+
+<div class="section-header">WHY A SIMPLE WEBSITE WORKS</div>
+
+<div class="why-card">
+  <h3>Simple. Clear. Effective.</h3>
+  <p>
+    For many small businesses, a clean one-page website is all that’s needed.
+    It gives you a professional online presence, makes you easy to find, and
+    gives customers a clear way to contact you — without unnecessary complexity
+    or ongoing costs.
+  </p>
+  <p>
+    A simple website works alongside social media. When someone searches your
+    business name or clicks a link, they land on something clear, trustworthy,
+    and focused. That confidence helps turn interest into real enquiries.
+  </p>
+</div>
 
 <div class="section-header">PRICING</div>
 
@@ -207,28 +252,27 @@ footer {
   <p>Simple, professional logo for your business.</p>
 </div>
 
-<div class="section-header">CONTACT US</div>
+<div class="price-card">
+  <h3>Code-only build</h3>
+  <div class="price">£60</div>
+  <p>Clean HTML/CSS supplied for you to host or edit yourself.</p>
+</div>
 
-<section class="section">
-  <div class="contact-card">
-    <form class="contact-form">
-      <input type="text" placeholder="Your name" required>
-      <input type="email" placeholder="Your email" required>
-      <textarea rows="4" placeholder="Tell me about your project" required></textarea>
-      <button type="submit">Send message</button>
-    </form>
+<div class="section-header" id="contact">CONTACT US</div>
 
-    <div class="contact-details">
-      <div class="contact-line">
-        📱 WhatsApp: 07732813072
-      </div>
+<div class="contact-card">
+  <form class="contact-form">
+    <input type="text" placeholder="Your name" required>
+    <input type="email" placeholder="Your email" required>
+    <textarea rows="4" placeholder="Tell me about your project" required></textarea>
+    <button type="submit">Send message</button>
+  </form>
 
-      <span class="email">
-        ✉️ simplesitestudioinfo@gmail.com
-      </span>
-    </div>
+  <div class="contact-details">
+    <div>📱 WhatsApp: 07732813072</div>
+    <div class="email">✉️ simplesitestudioinfo@gmail.com</div>
   </div>
-</section>
+</div>
 
 <footer>
   © 2026 SimpleSiteStudio • Built Clean. Built to Work.
