@@ -22,126 +22,146 @@ body {
 /* HEADER */
 header {
   background: #ffffff;
-  padding: 18px;
+  padding: 20px;
+  position: relative;
 }
 
 header img {
-  max-width: 240px;
-  width: 100%;
+  max-width: 260px;
   height: auto;
+}
+
+/* FADING SEPARATOR */
+header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -14px;
+  width: 100%;
+  height: 28px;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0) 0%,
+    rgba(0,0,0,0.7) 50%,
+    rgba(0,0,0,0) 100%
+  );
+  pointer-events: none;
 }
 
 /* HERO */
 .hero {
   background: linear-gradient(#e58b3c, #1a1a1a);
-  padding: 36px 16px;
+  padding: 40px 20px;
 }
 
 .hero h1 {
   font-family: "Brush Script MT", cursive;
   font-size: 26px;
-  margin-bottom: 14px;
+  color: #ffffff;
 }
 
 .hero p {
-  font-size: 16px;
-  max-width: 480px;
-  margin: 0 auto 18px;
+  margin: 18px auto;
+  max-width: 520px;
+  font-size: 17px;
 }
 
-.hero a {
-  display: inline-block;
-  background: #3b6fd8;
-  color: #fff;
-  padding: 12px 26px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-size: 16px;
+/* STRONG 3D BLUE BUTTON */
+.btn-blue {
+  background: linear-gradient(to bottom, #6a95ff 0%, #2f5fd0 100%);
+  color: #ffffff;
+  border: none;
+  padding: 14px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+
+  box-shadow:
+    inset 0 2px 0 rgba(255,255,255,0.25),
+    inset 0 -3px 0 rgba(0,0,0,0.35),
+    0 8px 0 #1f3f8f,
+    0 14px 26px rgba(0,0,0,0.5);
+
+  transition: all 0.15s ease;
+}
+
+.btn-blue:hover {
+  filter: brightness(1.08);
+}
+
+.btn-blue:active {
+  transform: translateY(5px);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.2),
+    inset 0 -2px 0 rgba(0,0,0,0.4),
+    0 3px 0 #1f3f8f,
+    0 6px 12px rgba(0,0,0,0.45);
 }
 
 /* SECTION HEADERS */
 .section-header {
   background: #e58b3c;
   color: #000;
-  padding: 12px;
+  padding: 12px 26px;
   font-weight: bold;
   letter-spacing: 1px;
-  margin-top: 36px;
+  margin: 42px auto 0;
+  display: inline-block;
+  border-radius: 999px;
 }
 
-/* WHAT I DO BOX */
-.what-box {
+/* INFO BOX */
+.info-box {
   background: #e58b3c;
   color: #000;
-  border: 3px solid #c96f27;
-  border-radius: 14px;
-  padding: 16px;
-  max-width: 600px;
-  margin: 20px auto;
-}
-
-.what-box p {
+  border: 3px solid #c8742f;
+  border-radius: 16px;
+  padding: 22px 18px;
+  max-width: 650px;
+  margin: 24px auto;
   font-size: 15px;
-  margin-bottom: 12px;
 }
 
-.what-box ul {
+.info-box p {
+  margin-bottom: 14px;
+}
+
+.info-box ul {
   list-style: none;
 }
 
-.what-box li {
-  font-size: 14px;
+.info-box li {
+  margin: 8px 0;
   font-weight: bold;
-  margin: 6px 0;
-}
-
-/* WHY IT WORKS */
-.why-card {
-  background: #1c1c1c;
-  border-radius: 14px;
-  padding: 26px 20px;
-  max-width: 650px;
-  margin: 20px auto;
-}
-
-.why-card h3 {
-  color: #e58b3c;
-  margin-bottom: 12px;
-}
-
-.why-card p {
-  font-size: 15px;
-  line-height: 1.6;
-  color: #dddddd;
 }
 
 /* PRICING */
 .price-card {
   background: #1c1c1c;
-  padding: 26px 18px;
+  padding: 30px 20px;
   margin: 20px auto;
   border-radius: 12px;
   max-width: 500px;
 }
 
 .price-card h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
+  font-size: 22px;
 }
 
 .price {
   color: #e58b3c;
-  font-size: 32px;
-  margin-bottom: 10px;
+  font-size: 36px;
+  margin: 15px 0;
 }
 
 /* CONTACT */
 .contact-card {
   background: #1c1c1c;
-  padding: 26px 18px;
+  padding: 30px 20px;
   border-radius: 12px;
   max-width: 500px;
-  margin: 20px auto;
+  margin: auto;
 }
 
 .contact-form input,
@@ -154,27 +174,21 @@ header img {
 }
 
 .contact-form button {
-  background: #e58b3c;
-  border: none;
-  padding: 12px;
   width: 100%;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
 }
 
 .contact-details {
-  margin-top: 18px;
+  margin-top: 24px;
   font-size: 15px;
 }
 
 .contact-details div {
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
 .email {
   font-size: 13px;
-  word-break: break-word;
+  word-break: break-all;
 }
 
 /* FOOTER */
@@ -194,17 +208,21 @@ footer {
 
 <section class="hero">
   <h1>Built Clean • Built to Work</h1>
-  <p>This website is an example of the kind of site I build for clients.</p>
-  <a href="#contact">Contact us</a>
+  <p>This website is an example of the kind of site we build for clients.</p>
+  <button class="btn-blue"
+    onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+    Contact us
+  </button>
 </section>
 
-<div class="section-header">WHAT I DO</div>
+<div class="section-header">WHAT WE DO</div>
 
-<div class="what-box">
+<div class="info-box">
   <p>
-    I design clean, mobile-friendly one-page websites and logos for small
+    We design clean, mobile-friendly one-page websites and logos for small
     businesses that need to look professional and be easy to contact.
   </p>
+
   <ul>
     <li>One-page websites</li>
     <li>Logo design</li>
@@ -213,23 +231,6 @@ footer {
     <li>No ongoing design fees</li>
     <li>Code-only builds available</li>
   </ul>
-</div>
-
-<div class="section-header">WHY A SIMPLE WEBSITE WORKS</div>
-
-<div class="why-card">
-  <h3>Simple. Clear. Effective.</h3>
-  <p>
-    For many small businesses, a clean one-page website is all that’s needed.
-    It gives you a professional online presence, makes you easy to find, and
-    gives customers a clear way to contact you — without unnecessary complexity
-    or ongoing costs.
-  </p>
-  <p>
-    A simple website works alongside social media. When someone searches your
-    business name or clicks a link, they land on something clear, trustworthy,
-    and focused. That confidence helps turn interest into real enquiries.
-  </p>
 </div>
 
 <div class="section-header">PRICING</div>
@@ -247,32 +248,34 @@ footer {
 </div>
 
 <div class="price-card">
+  <h3>Code-only build</h3>
+  <div class="price">£60</div>
+  <p>Clean, ready-to-use HTML/CSS code supplied.</p>
+</div>
+
+<div class="price-card">
   <h3>Logo design only</h3>
   <div class="price">£50</div>
   <p>Simple, professional logo for your business.</p>
 </div>
 
-<div class="price-card">
-  <h3>Code-only build</h3>
-  <div class="price">£60</div>
-  <p>Clean HTML/CSS supplied for you to host or edit yourself.</p>
-</div>
-
 <div class="section-header" id="contact">CONTACT US</div>
 
-<div class="contact-card">
-  <form class="contact-form">
-    <input type="text" placeholder="Your name" required>
-    <input type="email" placeholder="Your email" required>
-    <textarea rows="4" placeholder="Tell me about your project" required></textarea>
-    <button type="submit">Send message</button>
-  </form>
+<section>
+  <div class="contact-card">
+    <form class="contact-form">
+      <input type="text" placeholder="Your name" required>
+      <input type="email" placeholder="Your email" required>
+      <textarea rows="4" placeholder="Tell us about your project" required></textarea>
+      <button type="submit" class="btn-blue">Send message</button>
+    </form>
 
-  <div class="contact-details">
-    <div>📱 WhatsApp: 07732813072</div>
-    <div class="email">✉️ simplesitestudioinfo@gmail.com</div>
+    <div class="contact-details">
+      <div>📱 WhatsApp: 07732813072</div>
+      <div>✉️ <span class="email">simplesitestudioinfo@gmail.com</span></div>
+    </div>
   </div>
-</div>
+</section>
 
 <footer>
   © 2026 SimpleSiteStudio • Built Clean. Built to Work.
