@@ -14,177 +14,164 @@
 }
 
 body {
-  background: #0f0f0f;
-  color: #ffffff;
+  background:
+    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)),
+    url("main-background.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
   text-align: center;
 }
 
 /* HEADER */
-header {
-  background: #0f0f0f;
-  padding: 2px 10px 0; /* almost nothing */
+.site-header {
+  padding-top: 8px;
+  margin-bottom: -28px;
 }
 
-header img {
+.site-header img {
   width: 100%;
-  max-width: 900px;
+  max-width: 700px;
   height: auto;
-  display: block;
-  margin: 0 auto;
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 65%, rgba(0,0,0,0) 100%);
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 65%, rgba(0,0,0,0) 100%);
 }
 
-/* DIVIDER – VERY SUBTLE */
-.header-divider {
-  height: 1px;
-  background: radial-gradient(
-    ellipse at center,
-    #000 0%,
-    transparent 70%
-  );
-}
-
-/* HERO – PULLED HARD UP */
+/* HERO */
 .hero {
-  background: linear-gradient(#000000, #2a2a2a);
-  padding: 6px 14px 12px;
-  margin-top: -34px; /* ← 4 notches higher */
+  padding: 10px 20px 6px;
 }
 
-.hero button {
-  background: linear-gradient(#5b86e5, #3b6fd8);
+/* BUTTON */
+.btn-blue {
+  background: linear-gradient(#4b79e4, #2f5fd0);
   color: #fff;
   border: none;
-  padding: 11px 26px;
-  font-size: 15px;
+  padding: 14px 32px;
+  font-size: 18px;
   border-radius: 10px;
   cursor: pointer;
-  box-shadow:
-    inset 0 2px 0 rgba(255,255,255,0.25),
-    0 4px 0 #2a57b8,
-    0 8px 12px rgba(0,0,0,0.4);
+  box-shadow: 0 6px 0 #1e3f8f, 0 10px 18px rgba(0,0,0,0.4);
 }
 
-.hero button:active {
-  transform: translateY(2px);
-  box-shadow:
-    inset 0 2px 0 rgba(255,255,255,0.2),
-    0 2px 0 #2a57b8,
-    0 5px 8px rgba(0,0,0,0.4);
+.btn-blue:active {
+  transform: translateY(3px);
+  box-shadow: 0 3px 0 #1e3f8f, 0 6px 10px rgba(0,0,0,0.4);
 }
 
 /* SECTION HEADERS */
 .section-header {
-  background: #e58b3c;
+  background: rgba(229,139,60,0.9);
   color: #000;
-  padding: 10px;
+  padding: 16px;
   font-weight: bold;
   letter-spacing: 1px;
-  margin-top: 8px;
-  width: 96%;
+  margin: 22px auto 12px;
+  width: 92%;
   max-width: 720px;
-  margin-left: auto;
-  margin-right: auto;
   border-radius: 10px;
   border: 2px solid #ffffff;
 }
 
 /* INFO BOX */
 .info-box {
-  background: #000;
-  color: #e58b3c;
-  padding: 12px;
-  border-radius: 12px;
-  border: 2px solid #ffffff;
+  background: rgba(0,0,0,0.45);
+  color: #ffffff;
+  border: 2px solid #e58b3c;
+  border-radius: 16px;
+  padding: 20px;
   max-width: 720px;
-  margin: 6px auto 10px;
-  font-size: 14.2px;
+  margin: 0 auto 22px;
+  line-height: 1.6;
+  backdrop-filter: blur(2px);
 }
 
 .info-box p {
-  margin-bottom: 6px;
-  line-height: 1.45;
+  margin-bottom: 12px;
 }
 
 .info-box ul {
   list-style: none;
+  margin-top: 10px;
 }
 
 .info-box li {
-  margin: 3px 0;
+  margin: 6px 0;
 }
 
 /* PRICING */
 .price-card {
-  background: #1c1c1c;
-  padding: 12px;
-  margin: 8px auto;
-  border-radius: 12px;
-  max-width: 520px;
+  background: rgba(0,0,0,0.45);
+  padding: 22px 18px;
+  margin: 14px auto;
+  border-radius: 14px;
+  max-width: 560px;
+  border: 2px solid #e58b3c;
+  backdrop-filter: blur(2px);
 }
 
 .price-card h3 {
-  font-size: 17px;
+  font-size: 20px;
 }
 
 .price {
   color: #e58b3c;
-  font-size: 28px;
-  margin: 6px 0;
+  font-size: 32px;
+  margin: 10px 0;
 }
 
 /* CONTACT */
 .contact-card {
-  background: #1c1c1c;
-  padding: 12px;
-  border-radius: 12px;
-  max-width: 520px;
-  margin: 8px auto;
+  background: rgba(0,0,0,0.45);
+  padding: 22px 18px;
+  border-radius: 14px;
+  max-width: 560px;
+  margin: auto;
+  border: 2px solid #e58b3c;
+  backdrop-filter: blur(2px);
 }
 
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  padding: 9px;
-  margin-bottom: 7px;
-  border-radius: 6px;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
   border: none;
 }
 
 .contact-form button {
-  background: linear-gradient(#5b86e5, #3b6fd8);
-  color: #fff;
+  background: linear-gradient(#4b79e4, #2f5fd0);
   border: none;
-  padding: 11px;
+  padding: 14px;
   width: 100%;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: bold;
   border-radius: 10px;
+  color: #fff;
   cursor: pointer;
-  box-shadow:
-    inset 0 2px 0 rgba(255,255,255,0.25),
-    0 4px 0 #2a57b8,
-    0 8px 12px rgba(0,0,0,0.4);
+  box-shadow: 0 6px 0 #1e3f8f, 0 10px 18px rgba(0,0,0,0.4);
 }
 
 .contact-details {
-  margin-top: 8px;
-  font-size: 13.5px;
+  margin-top: 16px;
+  font-size: 14px;
 }
 
 .contact-details div {
-  margin-top: 5px;
+  margin-top: 8px;
 }
 
 .email {
-  font-size: 12.8px;
-  word-break: break-all;
-  text-align: center;
+  font-size: 13px;
+  word-break: break-word;
 }
 
 /* FOOTER */
 footer {
-  margin: 8px 0;
-  font-size: 12.8px;
+  margin: 24px 0 16px;
+  font-size: 13px;
   color: #aaa;
 }
 </style>
@@ -192,13 +179,12 @@ footer {
 
 <body>
 
-<header>
-  <img src="header-image.png" alt="SimpleSiteStudio Logo">
+<header class="site-header">
+  <img src="header-image.png" alt="SimpleSiteStudio">
 </header>
-<div class="header-divider"></div>
 
 <section class="hero">
-  <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+  <button class="btn-blue" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
     Contact us
   </button>
 </section>
@@ -207,14 +193,16 @@ footer {
 
 <div class="info-box">
   <p>
-    We design clean, mobile-friendly one-page websites for small businesses that
-    want a professional online presence without unnecessary complexity.
+    We design clean, mobile-friendly one-page websites for small businesses that want a
+    professional online presence without unnecessary complexity.
   </p>
+
   <p>
-    We use modern, AI-assisted development tools alongside hands-on design and
-    decision-making. This allows us to work efficiently, reduce build time, and
-    keep costs sensible — without cutting corners.
+    We use modern design practices and the latest AI-assisted development tools to speed up
+    build time, reduce costs, and keep everything clean, efficient, and reliable — without
+    sacrificing quality or control.
   </p>
+
   <ul>
     <li>One-page website design</li>
     <li>Built-in contact form</li>
@@ -231,13 +219,19 @@ footer {
 <div class="price-card">
   <h3>Website design + contact form</h3>
   <div class="price">£169</div>
-  <p>Fully designed one-page website supplied with a built-in contact form.</p>
+  <p>
+    A complete one-page website supplied with all files and code, including a
+    built-in contact form and mobile-friendly layout.
+  </p>
 </div>
 
 <div class="price-card">
-  <h3>Website + contact form & logo design</h3>
+  <h3>Website + logo design</h3>
   <div class="price">£229</div>
-  <p>Complete one-page website plus a professionally designed logo.</p>
+  <p>
+    Everything in the website package plus a clean, professional logo and help
+    refining your business or company name.
+  </p>
 </div>
 
 <div class="section-header" id="contact">CONTACT US</div>
@@ -257,7 +251,7 @@ footer {
 </div>
 
 <footer>
-  © 2026 SimpleSiteStudio • Built Clean. Built to Work.
+  © 2026 SimpleSiteStudio • Built Clean • Built to Work
 </footer>
 
 </body>
