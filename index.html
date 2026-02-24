@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>SimpleSiteStudio | Bespoke One-Page Websites for Small Businesses</title>
-
 <meta name="description" content="SimpleSiteStudio designs bespoke, clean, mobile-friendly one-page websites for small businesses. Clear pricing, no ongoing fees, quick turnaround.">
 
 <style>
@@ -29,8 +28,8 @@ body {
 
 /* HEADER */
 .site-header {
-  padding-top: 6px;
-  padding-bottom: 4px;
+  padding-top: 4px;
+  padding-bottom: 0;
 }
 
 .site-header img {
@@ -39,63 +38,66 @@ body {
   height: auto;
   -webkit-mask-image: linear-gradient(
     to bottom,
-    rgba(0,0,0,1) 78%,
-    rgba(0,0,0,0.7) 90%,
+    rgba(0,0,0,1) 62%,
+    rgba(0,0,0,0.9) 74%,
+    rgba(0,0,0,0.6) 86%,
     rgba(0,0,0,0) 100%
   );
   mask-image: linear-gradient(
     to bottom,
-    rgba(0,0,0,1) 78%,
-    rgba(0,0,0,0.7) 90%,
+    rgba(0,0,0,1) 62%,
+    rgba(0,0,0,0.9) 74%,
+    rgba(0,0,0,0.6) 86%,
     rgba(0,0,0,0) 100%
   );
 }
 
 /* WELCOME */
 .welcome-wrap {
-  margin-top: -18px;
-  margin-bottom: 10px;
+  margin-top: -34px;
+  margin-bottom: 18px;
 }
 
 .welcome-wrap img {
   max-width: 42%;
   height: auto;
   filter:
-    drop-shadow(0 0 6px rgba(255,190,120,0.35))
-    drop-shadow(0 8px 18px rgba(0,0,0,0.7));
+    drop-shadow(0 0 4px rgba(255,180,80,0.35))
+    drop-shadow(0 6px 14px rgba(0,0,0,0.7));
 }
 
-/* PREMIUM SECTION PILLS */
+/* GLASSY ORANGE SECTION HEADERS */
 .section-header {
-  background:
-    linear-gradient(
-      180deg,
-      rgba(255,210,150,0.95) 0%,
-      rgba(230,145,70,0.92) 55%,
-      rgba(190,95,35,0.9) 100%
-    );
-  color: #111;
-  padding: 14px 24px;
+  background: linear-gradient(
+    180deg,
+    rgba(255,215,150,0.95) 0%,
+    rgba(255,175,95,0.93) 45%,
+    rgba(229,139,60,0.9) 100%
+  );
+  color: #000;
+  padding: 18px 22px;
   font-weight: 800;
-  letter-spacing: 1px;
-  margin: 18px auto 12px;
-  width: fit-content;
-  max-width: 90%;
+  letter-spacing: 1.4px;
+  margin: 26px auto 14px;
+  width: 92%;
+  max-width: 720px;
   border-radius: 999px;
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px) saturate(140%);
   box-shadow:
-    0 10px 22px rgba(0,0,0,0.55),
-    inset 0 1px 0 rgba(255,255,255,0.45);
+    0 16px 34px rgba(0,0,0,0.45),
+    inset 0 2px 0 rgba(255,255,255,0.6),
+    inset 0 -4px 0 rgba(180,90,30,0.65);
+  text-shadow: 0 1px 0 rgba(255,255,255,0.6);
 }
 
 /* CONTENT BOX */
 .content-box {
-  background: rgba(0,0,0,0.42);
-  border: 1.5px solid rgba(229,139,60,0.85);
+  background: rgba(0,0,0,0.45);
+  border: 2px solid #e58b3c;
   border-radius: 16px;
   padding: 22px;
   max-width: 720px;
-  margin: 0 auto 22px;
+  margin: 0 auto 24px;
   line-height: 1.6;
 }
 
@@ -112,20 +114,19 @@ body {
   margin: 6px 0;
 }
 
-/* WHAT WE DO – force all bullets orange */
-.section-header + .content-box ul li {
-  color: #f1a35c;
-  font-weight: 600;
+.highlight {
+  color: #e58b3c;
+  font-weight: bold;
 }
 
 /* PRICING */
 .price-card {
-  background: rgba(0,0,0,0.42);
+  background: rgba(0,0,0,0.45);
   padding: 26px 20px 30px;
   margin: 18px auto;
   border-radius: 16px;
   max-width: 560px;
-  border: 1.5px solid rgba(229,139,60,0.85);
+  border: 2px solid #e58b3c;
 }
 
 .price-card h3 {
@@ -134,7 +135,7 @@ body {
 }
 
 .price {
-  color: #f1a35c;
+  color: #e58b3c;
   font-size: 38px;
   font-weight: 900;
   margin: 10px 0 6px;
@@ -145,20 +146,20 @@ body {
 
 .price-desc {
   font-size: 14px;
-  color: #ddd;
-  line-height: 1.5;
+  color: #d8d8d8;
   max-width: 420px;
   margin: 0 auto;
+  line-height: 1.5;
 }
 
 /* CONTACT */
 .contact-card {
-  background: rgba(0,0,0,0.42);
+  background: rgba(0,0,0,0.45);
   padding: 24px 18px;
   border-radius: 16px;
   max-width: 560px;
   margin: auto;
-  border: 1.5px solid rgba(229,139,60,0.85);
+  border: 2px solid #e58b3c;
 }
 
 .contact-form input,
@@ -167,7 +168,7 @@ body {
   width: 100%;
   padding: 12px;
   margin-bottom: 10px;
-  border-radius: 10px;
+  border-radius: 8px;
   border: none;
 }
 
@@ -178,27 +179,27 @@ body {
   width: 100%;
   font-size: 16px;
   font-weight: bold;
-  border-radius: 12px;
+  border-radius: 10px;
   color: #fff;
   cursor: pointer;
   box-shadow:
     0 6px 0 #1e3f8f,
-    0 12px 20px rgba(0,0,0,0.45);
+    0 10px 18px rgba(0,0,0,0.4);
 }
 
-/* FACEBOOK */
+/* FACEBOOK BUTTON */
 .fb-btn {
   display: inline-block;
-  margin-top: 14px;
-  padding: 10px 24px;
+  margin-top: 16px;
+  padding: 10px 26px;
   background: linear-gradient(#1877f2, #0f5dc8);
   color: #fff;
   border-radius: 999px;
   font-weight: bold;
   text-decoration: none;
   box-shadow:
-    0 4px 0 #0b4aa0,
-    0 10px 18px rgba(0,0,0,0.5);
+    0 5px 0 #0b4aa0,
+    0 12px 20px rgba(0,0,0,0.5);
 }
 </style>
 </head>
@@ -220,8 +221,6 @@ body {
     A professional website gives your business credibility before you ever speak to a customer.
     For many people, your website is the first impression — and first impressions matter.
   </p>
-
-  <p>An online presence helps small businesses:</p>
 
   <ul>
     <li>Look established and trustworthy</li>
@@ -247,11 +246,11 @@ body {
   <ul>
     <li>Bespoke one-page website design</li>
     <li>Built-in contact form</li>
-    <li>Logo design</li>
-    <li>Business & company name ideas</li>
-    <li>Mobile-friendly layouts</li>
-    <li>Quick turnaround</li>
-    <li>No ongoing design fees</li>
+    <li class="highlight">Logo design</li>
+    <li class="highlight">Business & company name ideas</li>
+    <li class="highlight">Mobile-friendly layouts</li>
+    <li class="highlight">Quick turnaround</li>
+    <li class="highlight">No ongoing design fees</li>
   </ul>
 </div>
 
@@ -261,8 +260,8 @@ body {
   <h3>Bespoke website design + contact form</h3>
   <div class="price">£199</div>
   <div class="price-desc">
-    A custom-built one-page website designed around your business, supplied with a built-in
-    contact form and mobile-friendly layout.
+    Custom one-page website designed around your business,
+    supplied with a built-in contact form and mobile-friendly layout.
   </div>
 </div>
 
@@ -270,8 +269,8 @@ body {
   <h3>Bespoke website + logo design</h3>
   <div class="price">£249</div>
   <div class="price-desc">
-    Everything in the website package, plus a clean, professional logo and help refining
-    your business or company name.
+    Everything in the website package plus a clean, professional logo
+    and help refining your business or company name.
   </div>
 </div>
 
@@ -279,7 +278,8 @@ body {
   <h3>Logo design only</h3>
   <div class="price">£55</div>
   <div class="price-desc">
-    A clean, professional logo suitable for your website, social media, and marketing materials.
+    A clean, professional logo suitable for websites, social media,
+    and printed materials.
   </div>
 </div>
 
@@ -301,7 +301,7 @@ body {
     <li>Adding or adjusting small sections</li>
   </ul>
 
-  <p style="color:#f1a35c;font-size:22px;font-weight:700;">Simple fixes from £30</p>
+  <p class="highlight" style="font-size:22px;">Simple fixes from £30</p>
 </div>
 
 <div class="section-header" id="contact">CONTACT US</div>
