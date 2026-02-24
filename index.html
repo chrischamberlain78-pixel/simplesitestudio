@@ -42,21 +42,26 @@ body {
   margin-bottom: 30px;
 }
 
-/* BUTTON */
+/* 3D BLUE BUTTON */
 .btn-blue {
   background: linear-gradient(#4b79e4, #2f5fd0);
   color: #fff;
   border: none;
-  padding: 16px 36px;
+  padding: 16px 38px;
   font-size: 18px;
-  border-radius: 12px;
+  font-weight: bold;
+  border-radius: 14px;
   cursor: pointer;
-  box-shadow: 0 6px 0 #1e3f8f, 0 10px 18px rgba(0,0,0,0.4);
+  box-shadow:
+    0 6px 0 #1e3f8f,
+    0 12px 22px rgba(0,0,0,0.45);
 }
 
 .btn-blue:active {
-  transform: translateY(3px);
-  box-shadow: 0 3px 0 #1e3f8f, 0 6px 10px rgba(0,0,0,0.4);
+  transform: translateY(4px);
+  box-shadow:
+    0 2px 0 #1e3f8f,
+    0 6px 10px rgba(0,0,0,0.4);
 }
 
 /* SECTION HEADER */
@@ -94,7 +99,6 @@ body {
   margin: 6px 0;
 }
 
-/* HIGHLIGHT */
 .highlight {
   color: #e58b3c;
   font-weight: bold;
@@ -115,7 +119,9 @@ body {
   font-size: 38px;
   font-weight: 900;
   margin: 14px 0;
-  text-shadow: 0 2px 0 rgba(0,0,0,.7), 0 6px 12px rgba(0,0,0,.6);
+  text-shadow:
+    0 2px 0 rgba(0,0,0,.7),
+    0 6px 12px rgba(0,0,0,.6);
 }
 
 /* CONTACT */
@@ -145,30 +151,49 @@ body {
   width: 100%;
   font-size: 16px;
   font-weight: bold;
-  border-radius: 10px;
+  border-radius: 12px;
   color: #fff;
   cursor: pointer;
-  box-shadow: 0 6px 0 #1e3f8f, 0 10px 18px rgba(0,0,0,0.4);
+  box-shadow:
+    0 6px 0 #1e3f8f,
+    0 12px 22px rgba(0,0,0,0.45);
 }
 
-/* FACEBOOK */
+.contact-form button:active {
+  transform: translateY(4px);
+  box-shadow:
+    0 2px 0 #1e3f8f,
+    0 6px 10px rgba(0,0,0,0.4);
+}
+
+/* FACEBOOK BUTTON – EXTRA SHADING */
 .fb-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-top: 12px;
-  padding: 10px 16px;
-  background: #1877f2;
+  margin-top: 16px;
+  padding: 14px 30px;
+  background: linear-gradient(#3b95ff, #1877f2);
   color: #fff;
-  border-radius: 8px;
-  font-size: 14px;
-  text-decoration: none;
+  border-radius: 999px;
+  font-size: 15px;
   font-weight: bold;
+  text-decoration: none;
+  box-shadow:
+    0 9px 0 #0b4fa8,
+    0 18px 30px rgba(0,0,0,0.55);
+}
+
+.fb-btn:active {
+  transform: translateY(6px);
+  box-shadow:
+    0 3px 0 #0b4fa8,
+    0 8px 14px rgba(0,0,0,0.45);
 }
 
 .fb-btn span {
   font-size: 18px;
-  margin-right: 6px;
+  margin-right: 8px;
 }
 </style>
 </head>
@@ -186,6 +211,7 @@ body {
 </section>
 
 <div class="section-header">WHAT WE DO</div>
+
 <div class="box">
   <p>
     We design <strong>bespoke</strong>, clean, mobile-friendly one-page websites for small
@@ -229,14 +255,11 @@ body {
 
 <div class="box">
   <p><strong>Already have a website but something’s not quite right?</strong></p>
-
   <p>
     We offer quick fixes and small improvements for simple HTML/CSS websites,
     perfect for one-page sites or straightforward layouts that just need tidying up.
   </p>
-
   <p><strong>Typical fixes include:</strong></p>
-
   <ul>
     <li>Text and content changes</li>
     <li>Colour, spacing, and layout tweaks</li>
@@ -244,7 +267,6 @@ body {
     <li>Mobile display improvements</li>
     <li>Adding or adjusting small sections</li>
   </ul>
-
   <p>
     <strong>Pricing:</strong><br>
     <span class="highlight" style="font-size:22px;">Simple fixes from £30</span><br>
@@ -276,7 +298,10 @@ body {
     ✉️ simplesitestudioinfo@gmail.com
   </div>
 
-  <a class="fb-btn" href="https://www.facebook.com/profile.php?id=61588278524379" target="_blank" rel="noopener">
+  <a class="fb-btn"
+     href="https://www.facebook.com/profile.php?id=61588278524379"
+     target="_blank"
+     rel="noopener">
     <span>f</span> Find us on Facebook
   </a>
 </div>
