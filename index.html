@@ -4,9 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>SimpleSiteStudio | Simple One-Page Websites for Small Businesses</title>
-
-<meta name="description" content="Clean, bespoke one-page websites for small businesses and sole traders. Supplied as ready-to-use files with contact form and logo included.">
+<title>SimpleSiteStudio | Bespoke One-Page Websites</title>
+<meta name="description" content="Bespoke one-page websites for small businesses and sole traders. Clean, professional sites supplied ready to upload.">
 
 <style>
 * {
@@ -18,10 +17,10 @@
 
 body {
   background:
-    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.5)),
+    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.55)),
     url("main-background.png");
   background-size: cover;
-  background-position: center;
+  background-position: center 0px;
   background-attachment: fixed;
   color: #fff;
   text-align: center;
@@ -39,64 +38,63 @@ body {
   height: auto;
   -webkit-mask-image: linear-gradient(
     to bottom,
-    rgba(0,0,0,1) 68%,
-    rgba(0,0,0,0.85) 80%,
-    rgba(0,0,0,0.45) 92%,
+    rgba(0,0,0,1) 65%,
+    rgba(0,0,0,0.7) 85%,
     rgba(0,0,0,0) 100%
   );
   mask-image: linear-gradient(
     to bottom,
-    rgba(0,0,0,1) 68%,
-    rgba(0,0,0,0.85) 80%,
-    rgba(0,0,0,0.45) 92%,
+    rgba(0,0,0,1) 65%,
+    rgba(0,0,0,0.7) 85%,
     rgba(0,0,0,0) 100%
   );
 }
 
-/* WELCOME */
-.welcome-wrap {
-  margin-top: -6px;
-  margin-bottom: 18px;
+/* HERO QUESTION */
+.hero-question {
+  margin: -4px auto 18px;
+  max-width: 720px;
+  padding: 0 20px;
 }
 
-.welcome-wrap img {
-  max-width: 45%;
-  filter:
-    drop-shadow(0 0 4px rgba(255,180,80,0.35))
-    drop-shadow(0 6px 14px rgba(0,0,0,0.7));
+.hero-question h1 {
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #f1a35c;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.7);
 }
 
-/* SECTION HEADERS */
+/* GLASS ORANGE HEADERS */
 .section-header {
   background: linear-gradient(
     180deg,
     rgba(255,215,150,0.95),
-    rgba(255,175,95,0.93),
+    rgba(255,175,95,0.92),
     rgba(229,139,60,0.9)
   );
   color: #000;
-  padding: 18px 22px;
+  padding: 16px 22px;
   font-weight: 800;
   letter-spacing: 1.3px;
   margin: 26px auto 14px;
   width: 92%;
   max-width: 720px;
   border-radius: 999px;
-  backdrop-filter: blur(12px);
   box-shadow:
-    0 16px 34px rgba(0,0,0,0.45),
+    0 14px 30px rgba(0,0,0,0.45),
     inset 0 2px 0 rgba(255,255,255,0.6);
 }
 
 /* CONTENT BOX */
 .content-box {
-  background: rgba(0,0,0,0.45);
+  background: rgba(0,0,0,0.48);
   border: 2px solid #e58b3c;
   border-radius: 16px;
-  padding: 24px;
+  padding: 22px;
   max-width: 720px;
   margin: 0 auto 24px;
-  line-height: 1.65;
+  line-height: 1.6;
 }
 
 .content-box p {
@@ -109,16 +107,16 @@ body {
 }
 
 .content-box li {
-  margin: 8px 0;
+  margin: 6px 0;
   color: #e58b3c;
   font-weight: bold;
 }
 
-/* PRICE CARD */
+/* PRICING */
 .price-card {
-  background: rgba(0,0,0,0.45);
-  padding: 30px 20px 32px;
-  margin: 20px auto;
+  background: rgba(0,0,0,0.48);
+  padding: 26px 20px;
+  margin: 18px auto;
   border-radius: 16px;
   max-width: 560px;
   border: 2px solid #e58b3c;
@@ -126,23 +124,22 @@ body {
 
 .price {
   color: #e58b3c;
-  font-size: 44px;
+  font-size: 42px;
   font-weight: 900;
-  margin: 14px 0;
+  margin: 10px 0;
   text-shadow:
     0 2px 0 rgba(0,0,0,0.7),
-    0 6px 14px rgba(0,0,0,0.6);
+    0 8px 18px rgba(0,0,0,0.6);
 }
 
 .price-desc {
-  font-size: 15px;
+  font-size: 14px;
   color: #ddd;
-  line-height: 1.5;
 }
 
 /* CONTACT */
 .contact-card {
-  background: rgba(0,0,0,0.45);
+  background: rgba(0,0,0,0.48);
   padding: 24px 18px;
   border-radius: 16px;
   max-width: 560px;
@@ -151,8 +148,7 @@ body {
 }
 
 .contact-form input,
-.contact-form textarea,
-.contact-form select {
+.contact-form textarea {
   width: 100%;
   padding: 12px;
   margin-bottom: 10px;
@@ -167,24 +163,27 @@ body {
   width: 100%;
   font-size: 16px;
   font-weight: bold;
-  border-radius: 10px;
+  border-radius: 12px;
   color: #fff;
   cursor: pointer;
   box-shadow:
     0 6px 0 #1e3f8f,
-    0 10px 18px rgba(0,0,0,0.4);
+    0 12px 20px rgba(0,0,0,0.45);
 }
 
-/* FACEBOOK */
+/* FACEBOOK BUTTON */
 .fb-btn {
   display: inline-block;
-  margin-top: 16px;
-  padding: 10px 26px;
-  background: linear-gradient(#1877f2, #0f5dc8);
+  margin-top: 18px;
+  padding: 12px 30px;
+  background: linear-gradient(#2d88ff, #1877f2, #0f5dc8);
   color: #fff;
   border-radius: 999px;
-  font-weight: bold;
+  font-weight: 800;
   text-decoration: none;
+  box-shadow:
+    0 5px 0 #0b4aa0,
+    0 14px 24px rgba(0,0,0,0.6);
 }
 </style>
 </head>
@@ -195,78 +194,70 @@ body {
   <img src="header-image.png" alt="SimpleSiteStudio">
 </header>
 
-<div class="welcome-wrap">
-  <img src="welcome.png" alt="Welcome">
-</div>
-
-<div class="section-header">DO YOU WANT A SITE LIKE THIS?</div>
-
-<div class="content-box">
-  <p>
-    This is a real example of the type of website we build for small businesses
-    and sole traders — clean, professional, and easy to use.
-  </p>
-
-  <p>
-    <strong>Give me your ideas and I’ll bring them to life.</strong><br>
-    Tell us what you do, what you want your site to say, and how you want it to feel —
-    we’ll handle the rest.
-  </p>
+<div class="hero-question">
+  <h1>DO YOU WANT A PAGE LIKE THIS?</h1>
 </div>
 
 <div class="section-header">WHY AN ONLINE PRESENCE MATTERS</div>
 
 <div class="content-box">
   <p>
-    When someone hears about your business, the first thing they do is search for you online.
-    A professional website builds trust before you ever speak to them.
+    For small businesses and sole traders, a website is often the first place
+    potential customers look before deciding whether to get in touch.
   </p>
 
   <ul>
-    <li>Makes your business look established and credible</li>
-    <li>Helps customers find you on Google</li>
-    <li>Clearly explains what you offer</li>
-    <li>Gives customers a simple way to contact you</li>
-    <li>Works for your business 24/7</li>
+    <li>Builds trust and credibility instantly</li>
+    <li>Gives customers confidence to contact you</li>
+    <li>Clearly shows what you do and how to reach you</li>
+    <li>Helps people find you on Google and social media</li>
+    <li>Works for your business even when you’re busy</li>
   </ul>
 
   <p>
-    You don’t need a complicated website.<br>
-    You just need a clear one that works.
+    You don’t need anything complicated — just a clean, professional page that works.
   </p>
 </div>
 
-<div class="section-header">SIMPLE ONE-PAGE WEBSITE PACKAGE</div>
+<div class="section-header">WHAT YOU GET</div>
+
+<div class="content-box">
+  <ul>
+    <li>Bespoke one-page website (not a template)</li>
+    <li>Built-in contact form</li>
+    <li>Logo design included</li>
+    <li>Images added (including before & after photos)</li>
+    <li>Social media links if required</li>
+    <li>Mobile-friendly layout</li>
+    <li>Supplied as files, ready to upload</li>
+  </ul>
+
+  <p>
+    Before final delivery, you’ll receive a working proof of your website to view and test.
+    This gives you the chance to check everything over and request any small tweaks,
+    so you’re happy with the final result before the files are handed over.
+  </p>
+
+  <p>Give us your ideas — we’ll bring them to life.</p>
+</div>
+
+<div class="section-header">PRICE</div>
 
 <div class="price-card">
   <div class="price">£99</div>
   <div class="price-desc">
-    Bespoke one-page website<br>
-    Built-in contact form<br>
-    Logo design included<br>
-    Supplied as a complete folder with all files<br>
-    Ready to upload and go live<br>
-    No ongoing fees
+    Fully functioning bespoke one-page website supplied as a complete folder of files.
+    Hosting and domain setup are not included.
   </div>
 </div>
 
-<div class="section-header" id="contact">CONTACT US</div>
+<div class="section-header">CONTACT</div>
 
 <div class="contact-card">
   <form class="contact-form" action="https://formspree.io/f/xgolpkww" method="POST">
     <input type="text" name="name" placeholder="Your name" required>
     <input type="email" name="email" placeholder="Your email" required>
-
-    <select name="enquiry_type" required>
-      <option value="" disabled selected>What are you enquiring about?</option>
-      <option>Simple one-page website</option>
-      <option>Website + logo</option>
-      <option>Logo design only</option>
-      <option>Site fixes</option>
-      <option>General enquiry</option>
-    </select>
-
-    <textarea name="message" rows="4" placeholder="Briefly tell us what you’re looking for" required></textarea>
+    <textarea name="message" rows="4" placeholder="Tell us about your idea" required></textarea>
     <button type="submit">Send message</button>
   </form>
 
@@ -283,8 +274,8 @@ body {
 
 <script>
 window.addEventListener("scroll", function () {
-  document.body.style.backgroundPosition =
-    "center " + (-window.scrollY * 0.25) + "px";
+  const offset = window.scrollY * 0.25;
+  document.body.style.backgroundPosition = "center " + offset + "px";
 });
 </script>
 
