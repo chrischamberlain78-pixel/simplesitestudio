@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>SimpleSiteStudio | Bespoke One-Page Websites for Small Businesses</title>
-<meta name="description" content="Bespoke one-page websites for small businesses and sole traders. Clean design, contact form included, supplied ready to go.">
+<title>SimpleSiteStudio | Bespoke One-Page Websites</title>
+<meta name="description" content="Bespoke one-page websites for small businesses and sole traders. Logo and contact form included. Supplied ready to go.">
 
 <style>
 * {
@@ -28,21 +28,35 @@ body {
 
 /* HEADER */
 .site-header {
-  padding-top: 12px;
-  padding-bottom: 18px;
+  padding-top: 10px;
+  padding-bottom: 0;
 }
 
 .site-header img {
   width: 100%;
   max-width: 700px;
   height: auto;
-  -webkit-mask-image: linear-gradient(to bottom, #000 70%, transparent 100%);
-  mask-image: linear-gradient(to bottom, #000 70%, transparent 100%);
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0,0,0,1) 55%,
+    rgba(0,0,0,0.9) 70%,
+    rgba(0,0,0,0.6) 85%,
+    rgba(0,0,0,0.25) 95%,
+    rgba(0,0,0,0) 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0,0,0,1) 55%,
+    rgba(0,0,0,0.9) 70%,
+    rgba(0,0,0,0.6) 85%,
+    rgba(0,0,0,0.25) 95%,
+    rgba(0,0,0,0) 100%
+  );
 }
 
 /* WELCOME IMAGE */
 .welcome-wrap {
-  margin-top: -10px;
+  margin-top: -6px;
   margin-bottom: 18px;
 }
 
@@ -50,10 +64,10 @@ body {
   max-width: 45%;
   filter:
     drop-shadow(0 6px 16px rgba(0,0,0,0.7))
-    drop-shadow(0 0 10px rgba(229,139,60,0.4));
+    drop-shadow(0 0 10px rgba(229,139,60,0.35));
 }
 
-/* GLASS ORANGE PILLS */
+/* GLASSY ORANGE SECTION HEADERS */
 .section-header {
   background: linear-gradient(
     180deg,
@@ -61,16 +75,16 @@ body {
     rgba(229,139,60,0.9)
   );
   color: #000;
-  padding: 16px 26px;
+  padding: 16px 28px;
   font-weight: 800;
   letter-spacing: 1.2px;
-  margin: 24px auto 14px;
+  margin: 26px auto 14px;
   width: fit-content;
   max-width: 90%;
   border-radius: 999px;
   backdrop-filter: blur(10px);
   box-shadow:
-    0 12px 26px rgba(0,0,0,0.45),
+    0 14px 28px rgba(0,0,0,0.45),
     inset 0 1px 0 rgba(255,255,255,0.6);
 }
 
@@ -81,7 +95,7 @@ body {
   border-radius: 16px;
   padding: 22px;
   max-width: 720px;
-  margin: 0 auto 24px;
+  margin: 0 auto 26px;
   line-height: 1.6;
 }
 
@@ -100,10 +114,20 @@ body {
   font-weight: bold;
 }
 
+/* SAMPLE BOX (NO ORANGE BORDER) */
+.sample-box {
+  background: rgba(0,0,0,0.45);
+  border-radius: 16px;
+  padding: 22px;
+  max-width: 720px;
+  margin: 0 auto 26px;
+  line-height: 1.6;
+}
+
 /* PRICING */
 .price-card {
   background: rgba(0,0,0,0.45);
-  padding: 26px 20px;
+  padding: 28px 22px 32px;
   margin: 18px auto;
   border-radius: 16px;
   max-width: 560px;
@@ -111,12 +135,37 @@ body {
 }
 
 .price {
-  font-size: 38px;
-  font-weight: 900;
   color: #e58b3c;
+  font-size: 42px;
+  font-weight: 900;
+  margin: 10px 0;
   text-shadow:
     0 2px 0 rgba(0,0,0,0.7),
-    0 6px 12px rgba(0,0,0,0.6);
+    0 6px 14px rgba(0,0,0,0.6);
+}
+
+.price-desc {
+  font-size: 14px;
+  color: #ddd;
+  max-width: 440px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* BUTTONS */
+.btn-blue {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 14px 34px;
+  background: linear-gradient(#4b79e4, #2f5fd0);
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 999px;
+  text-decoration: none;
+  box-shadow:
+    0 6px 0 #1e3f8f,
+    0 14px 26px rgba(0,0,0,0.55);
 }
 
 /* CONTACT */
@@ -165,7 +214,7 @@ body {
   text-decoration: none;
   box-shadow:
     0 6px 0 #0b4aa0,
-    0 14px 24px rgba(0,0,0,0.55);
+    0 14px 26px rgba(0,0,0,0.55);
 }
 </style>
 </head>
@@ -184,54 +233,64 @@ body {
 
 <div class="content-box">
   <p>
-    A professional online presence helps small businesses and sole traders look established,
-    trustworthy, and easy to contact.
-  </p>
-
-  <p>
-    For many customers, your website is the first impression of your business —
-    and first impressions matter.
+    A professional online presence helps small businesses and sole traders look
+    credible, established, and easy to contact.
   </p>
 
   <ul>
-    <li>Helps customers find you online</li>
-    <li>Shows clearly what you do and how to contact you</li>
-    <li>Builds trust before a conversation even starts</li>
+    <li>Builds trust before customers get in touch</li>
+    <li>Makes it easy for people to find and contact you</li>
+    <li>Clearly shows what you do and how you help</li>
     <li>Works for your business 24/7</li>
   </ul>
-
-  <p>
-    Give us your ideas and we’ll bring them to life in a clean,
-    simple one-page website supplied ready to go.
-  </p>
 </div>
 
-<div class="section-header">WHAT WE BUILD</div>
+<div class="section-header">WHAT YOU GET</div>
 
 <div class="content-box">
   <ul>
     <li>Bespoke one-page website (not a template)</li>
     <li>Built-in contact form</li>
     <li>Logo design included</li>
-    <li>Images added (before & after, galleries, etc.)</li>
-    <li>Links to social media if required</li>
-    <li>Supplied as complete files ready to upload</li>
-    <li>No ongoing fees</li>
+    <li>Images added if required (before & after, galleries)</li>
+    <li>Links to your social media</li>
+    <li>Supplied as files, ready to upload</li>
   </ul>
+
+  <p>
+    Give us your ideas and we’ll bring them to life.
+    Proofs are uploaded for you to test and approve before final delivery.
+  </p>
 </div>
 
-<div class="section-header">HOW IT WORKS</div>
+<div class="section-header">PRICE</div>
 
-<div class="content-box">
+<div class="price-card">
+  <div class="price">£99</div>
+  <div class="price-desc">
+    A fully working bespoke one-page website supplied in a folder with all files included.
+    Logo design and contact form are included.
+  </div>
+</div>
+
+<!-- SAMPLE SECTION ADDED HERE -->
+<div class="section-header">SEE A REAL EXAMPLE</div>
+
+<div class="sample-box">
   <p>
-    Once your site is built, you’ll receive a live preview to test and review.
-    Any tweaks can be made so you’re 100% happy before final delivery.
+    Below is a live example of a one-page website built by SimpleSiteStudio.
+    It shows the style, layout, and functionality you can expect.
   </p>
 
   <p>
-    The finished website is supplied as a complete folder containing all files,
-    ready to upload or host wherever you choose.
+    This is the type of site supplied to clients — fully working and ready to upload.
   </p>
+
+  <a class="btn-blue"
+     href="https://chrischamberlain78-pixel.github.io/LetReadyGo/"
+     target="_blank">
+    View example website
+  </a>
 </div>
 
 <div class="section-header">CONTACT</div>
@@ -248,7 +307,9 @@ body {
     ✉️ simplesitestudioinfo@gmail.com
   </div>
 
-  <a class="fb-btn" href="https://www.facebook.com/profile.php?id=61588278524379" target="_blank">
+  <a class="fb-btn"
+     href="https://www.facebook.com/profile.php?id=61588278524379"
+     target="_blank">
     Find us on Facebook
   </a>
 </div>
